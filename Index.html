@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Atleta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Atleta</h1>
+    <form id="formAtleta">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required>
+
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" name="peso" step="0.1" required>
+
+      <label for="altura">Altura (m):</label>
+      <input type="number" id="altura" name="altura" step="0.01" required>
+
+      <label for="notas">Notas (separadas por vírgula):</label>
+      <input type="text" id="notas" name="notas" required>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado" class="resultado">
+      <h2>Resultados</h2>
+      <p><strong>Nome:</strong> <span id="resultadoNome"></span></p>
+      <p><strong>Idade:</strong> <span id="resultadoIdade"></span></p>
+      <p><strong>Peso:</strong> <span id="resultadoPeso"></span></p>
+      <p><strong>Altura:</strong> <span id="resultadoAltura"></span></p>
+      <p><strong>Notas:</strong> <span id="resultadoNotas"></span></p>
+      <p><strong>Categoria:</strong> <span id="resultadoCategoria"></span></p>
+      <p><strong>IMC:</strong> <span id="resultadoIMC"></span></p>
+      <p><strong>Média Válida:</strong> <span id="resultadoMedia"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
